@@ -33,3 +33,12 @@ class DoublyLinkedList:
             print(current_node.data, end=" <-> ")
             current_node = current_node.prev
         print("None")
+
+    def display_backward(self):
+        current_node = self.head
+        while current_node.next:
+            current_node = current_node.next
+        while current_node:
+            print(current_node.data, end=" <-> ")
+            current_node = current_node.prev
+        print("None")
